@@ -1,7 +1,7 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>CSS</title>
+  <title>HTML</title>
   <meta charset="utf-8">
 <style>
   a {
@@ -11,53 +11,68 @@
   h1 {
     font-size: 45px;
     text-align: center;
+    border:5px solid pink;
+    width:200px;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px
+  }
+  #grid {
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    border-top: 1px solid gray;
+  }
+  #grid #article {
+    border-left: 1px solid gray;
+    padding-left: 25px;
   }
   </style>
   </head>
   <body>
-    <h1><a href="index.html">코딩복습</h1>
-<P>
-      <ol>
-        <li><a href="1.html" style="color:blue";>배운 내용들</a></li>
-        <ul>
-          <li><a href="1.html"style=color:red>html</a></li>
-          <li><a href=css.html>css</a></li>
-        </ul>
-        <li><a href="2.html">헷갈리는 내용들</a></li>
-        <li><a href="3.html">중요한 내용들</a></li>
-      </ol>
-      </p>
-<p>
-  <h2>지금까지 배운 코딩(HTML) 2019.1.30 수요일</h2>
-  <ol>
-    <li><h3>태그설명</h3></li>
-   <ul>
-    <li>태그 : 내가 web상에서 표현하고자 하는 것을 구현시켜주는 기본 코딩문법
-      <br> <>라는 기호를 사용한다. </li>
-    <li>strong태그 : 글자를 진하게 한다.</li>
-    <li>u태그 : 밑줄</li>
-    <li>a태그 : 링크를 건다, (a href=""로 주소를 링크 건다.)(/a)</li>
-       target="_blank"은 새창으로 링크를 연다.
-      <br> title=""을 쓰면 링크에 마우스를 올리면 내가 쓴 간단한 정보를 볼 수 있다.</li>
-    <li>h1~6태그 : 주로 제목에 쓴다. 중요도 순으로 글씨크기가 크다.</li>
-    <li>title태그 : 웹 창의 제목</li>
-    <li>br태그 : 줄을 바꾼다.</li>
-    <li>p태그 문단을 구분 짓는다.</li>
-    <li>img태그 : img src=""를 사용한다.
-      <br> width=""를 사용하여 사진의 크기를 조정한다.</li>
-    <li>부모태그와 자식태그 :
-      <br>부모태그는 ol,ul을 쓴다. ol은 순서를 숫자로 표기, ul은 점으로 표기해준다.
-      자식태그는 li태그를 쓴다.</li>
-    <li>meta태그 : 파일을 어떠한 형식으로 읽으라는 태그 나는 주로 meta="uft-8"을 쓰게 될거 같다.</li>
-</ul>
-<li><h3>코딩의 기본 약속</h3></li>
-  <ol>
-   <li>가장처음에는 (!독타입 html)을 써준다.</li>
-   <li>그 다음에 전체를 (html태그)로 감싸준다.</li>
-   <li>본문을 설명해주는 내용들은 (head태그)로 감싸준다.</li>
-   <li>본문은 (body태그)로 감싸준다.</li>
-    <br> 추신 : <>은 ()로 표현하였음.
-  </ol>
-</p>
+    <h1><a href="index.html">코딩복습</a></h1>
+<div id="grid">
+          <ol>
+          <li><a href="1.html" style="color:blue";>배운 내용들</a></li>
+          <ul>
+            <li><a href="1.html"style=color:red>html</a></li>
+            <li><a href=css.html>css</a></li>
+          </ul>
+          <li><a href="2.html">헷갈리는 내용들</a></li>
+          <li><a href="3.html">중요한 내용들</a></li>
+        </ol>
+
+    <div id="article">
+    <h2>지금까지 배운 코딩(HTML) 2019.1.30 수요일</h2>
+    <ol>
+        <li><h3>태그설명</h3></li>
+     <ul>
+      <li>태그 : 내가 web상에서 표현하고자 하는 것을 구현시켜주는 기본 코딩문법
+        <br> <>라는 기호를 사용한다. </li>
+      <li>strong태그 : 글자를 진하게 한다.</li>
+      <li>u태그 : 밑줄</li>
+      <li>a태그 : 링크를 건다, (a href=""로 주소를 링크 건다.)(/a)</li>
+         target="_blank"은 새창으로 링크를 연다.
+        <br> title=""을 쓰면 링크에 마우스를 올리면 내가 쓴 간단한 정보를 볼 수 있다.</li>
+      <li>h1~6태그 : 주로 제목에 쓴다. 중요도 순으로 글씨크기가 크다.</li>
+      <li>title태그 : 웹 창의 제목</li>
+      <li>br태그 : 줄을 바꾼다.</li>
+      <li>p태그 문단을 구분 짓는다.</li>
+      <li>img태그 : img src=""를 사용한다.
+        <br> width=""를 사용하여 사진의 크기를 조정한다.</li>
+      <li>부모태그와 자식태그 :
+        <br>부모태그는 ol,ul을 쓴다. ol은 순서를 숫자로 표기, ul은 점으로 표기해준다.
+        자식태그는 li태그를 쓴다.</li>
+      <li>meta태그 : 파일을 어떠한 형식으로 읽으라는 태그 나는 주로 meta="uft-8"을 쓰게 될거 같다.</li>
+  </ul>
+  <li><h3>코딩의 기본 약속</h3></li>
+    <ol>
+     <li>가장처음에는 (!독타입 html)을 써준다.</li>
+     <li>그 다음에 전체를 (html태그)로 감싸준다.</li>
+     <li>본문을 설명해주는 내용들은 (head태그)로 감싸준다.</li>
+     <li>본문은 (body태그)로 감싸준다.</li>
+      <br> 추신 : <>은 ()로 표현하였음.
+    </ol>
+  </div>
+</div>
     </body>
 </html>

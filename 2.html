@@ -11,27 +11,45 @@
    h1 {
      font-size: 45px;
      text-align: center;
+     border:5px solid pink;
+     width:200px;
+     margin:auto;
+     margin-top: 20px;
+     margin-bottom: 20px
+   }
+   #grid {
+     display:grid;
+     grid-template-columns: 200px 1fr;
+     border-top: 1px solid gray;
+   }
+   #grid #article {
+     border-left: 1px solid gray;
+     padding-left: 25px;
    }
   </style>
 </head>
 <body>
-  <h1><a href="index.html">코딩복습</h1>
+  <h1><a href="index.html">코딩복습</a></h1>
+<div id="grid">
   <ol>
     <li><a href="1.html">배운 내용들</a></li>
     <li><a href="2.html" style=color:blue>헷갈리는 내용들</a></li>
     <li><a href="3.html">중요한 내용들</a></li>
   </ol>
-<h2>헷갈리는 내용들</h2>
-<ul>
-<li><p>a태그 : 링크를 건다, (a href=""로 주소를 링크 건다.)
-   <br>target="_blank"은 새창으로 링크를 연다.
-   <br>title=""을 쓰면 링크에 마우스를 올리면 내가 쓴 간단한 정보를 볼 수 있다.</P></li>
-<li><p>img태그 : img src=""를 사용한다.
-  <br>width=""를 사용하여 사진의 크기를 조정한다.</P></li>
-<li><p>부모태그와 자식태그 :
-  <br>부모태그는 ol,ul을 쓴다. ol은 순서를 숫자로 표기, ul은 점으로 표기해준다.
-  <br>자식태그는 li태그를 쓴다.
-  <br>기타 아직 모르는 부보자식태그들이 있다.</P></li>
-</ul>
+<div id="article">
+  <h2>헷갈리는 내용들</h2>
+  <ul>
+  <li><p>a태그 : 링크를 건다, (a href=""로 주소를 링크 건다.)
+     <br>target="_blank"은 새창으로 링크를 연다.
+     <br>title=""을 쓰면 링크에 마우스를 올리면 내가 쓴 간단한 정보를 볼 수 있다.</P></li>
+  <li><p>img태그 : img src=""를 사용한다.
+    <br>width=""를 사용하여 사진의 크기를 조정한다.</P></li>
+  <li><p>부모태그와 자식태그 :
+    <br>부모태그는 ol,ul을 쓴다. ol은 순서를 숫자로 표기, ul은 점으로 표기해준다.
+    <br>자식태그는 li태그를 쓴다.
+    <br>기타 아직 모르는 부보자식태그들이 있다.</P></li>
+  </ul>
+</div>
+</div>
 </body>
 </html>

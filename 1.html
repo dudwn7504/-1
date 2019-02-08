@@ -11,26 +11,50 @@
    h1 {
      font-size: 45px;
      text-align: center;
+     border:5px solid pink;
+     width:200px;
+     margin:auto;
+     margin-top: 20px;
+     margin-bottom: 20px;
+   }
+  #grid #article{
+     border-left: 1px solid gray;
+     padding-left: 20px;
+   }
+   #grid{
+     display: grid;
+     grid-template-columns:200px 1fr;
+     border-top:1px solid gray;
+   }
+   #grid ol{
+     padding-left: 30px;
+   }
+   div{
+
    }
   </style>
 </head>
 <body>
-  <h1><a href="index.html">코딩복습</h1>
-  <ol>
-    <li><a href="1.html" style="color:blue";>배운 내용들</a></li>
-    <ul>
-      <li><a href="html.html">html</a></li>
-      <li><a href=css.html>css</a></li>
-    </ul>
-    <li><a href="2.html">헷갈리는 내용들</a></li>
-    <li><a href="3.html">중요한 내용들</a></li>
-  </ol>
-  <h2>지금까지 배운 코딩2019.2.4 월요일</h2>
-<p>
-  <ul>
-    <li><h3><a href="html.html">HTML</a></h3></li>
-    <li><h3><a href=css.html>CSS</a></h3></li>
-  </ul>
-</p>
+  <h1><a href="index.html">코딩복습</a></h1>
+<div id="grid">
+    <ol>
+      <li><a href="1.html" style="color:blue";>배운 내용들</a></li>
+      <ul>
+        <li><a href="html.html">html</a></li>
+        <li><a href=css.html>css</a></li>
+      </ul>
+      <li><a href="2.html">헷갈리는 내용들</a></li>
+      <li><a href="3.html">중요한 내용들</a></li>
+    </ol>
+  <div id=article>
+     <p>
+      <h2>지금까지 배운 코딩2019.2.4 월요일</h2>
+        <ul>
+          <li><h3><a href="html.html">HTML</a></h3></li>
+          <li><h3><a href=css.html>CSS</a></h3></li>
+        </ul>
+      </p>
+  </div>
+</div>
 </body>
 </html>

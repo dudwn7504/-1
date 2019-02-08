@@ -11,26 +11,44 @@
    h1 {
      font-size: 45px;
      text-align: center;
+     border:5px solid pink;
+     width:200px;
+     margin:auto;
+     margin-top: 20px;
+     margin-bottom: 20px
+   }
+   #grid {
+     display:grid;
+     grid-template-columns: 200px 1fr;
+     border-top: 1px solid gray;
+   }
+   #grid #article {
+     border-left: 1px solid gray;
+     padding:25px;
    }
   </style>
 </head>
 <body>
-  <h1><a href="index.html">코딩복습</h1>
-  <ol>
-    <li><a href="1.html">배운 내용들</a></li>
-    <li><a href="2.html">헷갈리는 내용들</a></li>
-    <li><a href="3.html" style=color:blue>중요한 내용들</a></li>
-  </ol>
-<h2>중요한 내용들</h2>
-<h3>코딩의 기본 약속</h3></li>
-  <ol>
-   <li>가장처음에는 (!독타입 html)을 써준다.  (물론영어로 ㅋ)</li>
-   <li>그 다음에 전체를 (html태그)로 감싸준다.</li>
-   <li>본문을 설명해주는 내용들은 (head태그)로 감싸준다.</li>
-   <li>본문은 (body태그)로 감싸준다.</li>
-    <br> 추신 : <>은 ()로 표현하였음.
-  </ol>
-  헷갈리는 내용이나 중요한 내용들은 모두 배운내용들이다.
-  <br>현재 배운 내용들이 모두 중요하다. 왜냐하면 가장 기본이고 모든 웹의 기본 구조이기 떄문이다.
+  <h1><a href="index.html">코딩복습</a></h1>
+<div id="grid">
+    <ol>
+      <li><a href="1.html">배운 내용들</a></li>
+      <li><a href="2.html">헷갈리는 내용들</a></li>
+      <li><a href="3.html" style=color:blue>중요한 내용들</a></li>
+    </ol>
+    <div id="article">
+  <h2>중요한 내용들</h2>
+  <h3>코딩의 기본 약속</h3></li>
+    <ol>
+     <li>가장처음에는 (!독타입 html)을 써준다.  (물론영어로 ㅋ)</li>
+     <li>그 다음에 전체를 (html태그)로 감싸준다.</li>
+     <li>본문을 설명해주는 내용들은 (head태그)로 감싸준다.</li>
+     <li>본문은 (body태그)로 감싸준다.</li>
+      <br> 추신 : <>은 ()로 표현하였음.
+    </ol>
+    헷갈리는 내용이나 중요한 내용들은 모두 배운내용들이다.
+    <br>현재 배운 내용들이 모두 중요하다. 왜냐하면 가장 기본이고 모든 웹의 기본 구조이기 때문이다.
+  </div>
+</div>
 </body>
 </html>
