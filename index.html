@@ -11,20 +11,28 @@
  h1 {
    font-size: 45px;
    text-align: center;
-   border:5px solid pink;
    width:200px;
    margin:auto;
    margin-top: 20px;
-   margin-bottom: 20px
+   margin-bottom: 20px;
  }
  #grid {
    display: grid;
    grid-template-columns:200px 1fr;
-   border-top:1px solid gray;
+   border-top: 1px solid gray;
  }
  #grid #article {
-   border-left: 1px solid gray;
    padding-left: 25px;
+   border-left: 1px solid gray;
+ }
+ @media(max-width:800px) {
+   #grid {
+     display: block;
+     border-top: none;
+   }
+   #grid #article {
+     border-left: none;
+   }
  }
 </style>
 </head>
